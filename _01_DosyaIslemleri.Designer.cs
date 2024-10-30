@@ -43,6 +43,8 @@
             this.txtAd = new System.Windows.Forms.TextBox();
             this.btnOku = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnYazdir = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // BtnFolderBrowserDialog
@@ -148,7 +150,7 @@
             // 
             // btnOku
             // 
-            this.btnOku.Location = new System.Drawing.Point(674, 319);
+            this.btnOku.Location = new System.Drawing.Point(674, 307);
             this.btnOku.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOku.Name = "btnOku";
             this.btnOku.Size = new System.Drawing.Size(215, 47);
@@ -162,16 +164,37 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(37, 180);
+            this.listBox1.Location = new System.Drawing.Point(37, 152);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(317, 204);
+            this.listBox1.Size = new System.Drawing.Size(317, 129);
             this.listBox1.TabIndex = 11;
+            // 
+            // btnYazdir
+            // 
+            this.btnYazdir.Location = new System.Drawing.Point(674, 364);
+            this.btnYazdir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnYazdir.Name = "btnYazdir";
+            this.btnYazdir.Size = new System.Drawing.Size(215, 47);
+            this.btnYazdir.TabIndex = 12;
+            this.btnYazdir.Text = "Yazdır";
+            this.btnYazdir.UseVisualStyleBackColor = true;
+            this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(37, 298);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(317, 96);
+            this.richTextBox1.TabIndex = 13;
+            this.richTextBox1.Text = "";
             // 
             // _01_DosyaIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 482);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btnYazdir);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnOku);
             this.Controls.Add(this.lblAd);
@@ -210,6 +233,8 @@
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Button btnOku;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnYazdir;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

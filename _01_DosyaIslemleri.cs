@@ -67,6 +67,19 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             }
         }
 
+        private void btnYazdir_Click(object sender, EventArgs e)
+        {
+            // Sadece txt metin dosyalarını görmek için :
+            // Metin Dosyası açılan ekranda yazıyor diğeride uzantı :)
+            saveFileDialog1.Filter = "Metin Dosyası |* .txt";
+            saveFileDialog1.ShowDialog();
+            StreamWriter kaydet = new StreamWriter(saveFileDialog1.FileName);
+            kaydet.WriteLine(richTextBox1.Text);
+            kaydet.Close();
+            MessageBox.Show("Yeni metin belgesi kayıt yapıldı.","Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
+
         private void btnKonumSec_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
