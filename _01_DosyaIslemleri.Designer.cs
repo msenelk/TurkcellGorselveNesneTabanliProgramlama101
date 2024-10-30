@@ -41,6 +41,8 @@
             this.btnOlustur = new System.Windows.Forms.Button();
             this.lblAd = new System.Windows.Forms.Label();
             this.txtAd = new System.Windows.Forms.TextBox();
+            this.btnOku = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // BtnFolderBrowserDialog
@@ -144,11 +146,34 @@
             this.txtAd.Size = new System.Drawing.Size(214, 30);
             this.txtAd.TabIndex = 8;
             // 
+            // btnOku
+            // 
+            this.btnOku.Location = new System.Drawing.Point(674, 319);
+            this.btnOku.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOku.Name = "btnOku";
+            this.btnOku.Size = new System.Drawing.Size(215, 47);
+            this.btnOku.TabIndex = 10;
+            this.btnOku.Text = "Oku";
+            this.btnOku.UseVisualStyleBackColor = true;
+            this.btnOku.Click += new System.EventHandler(this.btnOku_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(37, 180);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(317, 204);
+            this.listBox1.TabIndex = 11;
+            // 
             // _01_DosyaIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 482);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnOku);
             this.Controls.Add(this.lblAd);
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.btnOlustur);
@@ -183,6 +208,8 @@
         private System.Windows.Forms.Button btnOlustur;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.Button btnOku;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

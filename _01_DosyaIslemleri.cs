@@ -52,6 +52,21 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             MessageBox.Show("Belgeniz başarıyla oluşturuldu", "Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
+        private void btnOku_Click(object sender, EventArgs e)
+        {
+            //   HorizontalScroll => yatay kaydırma çubuğu
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader oku = new StreamReader(openFileDialog1.FileName);
+                string satir = oku.ReadLine();
+                while( satir != null)
+                {
+                    listBox1.Items.Add( satir );
+                    satir = oku.ReadLine();
+                }
+            }
+        }
+
         private void btnKonumSec_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
