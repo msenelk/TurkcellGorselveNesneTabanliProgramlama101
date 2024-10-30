@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="02_FormIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_FormIslemleri.Designer.cs">
+      <DependentUpon>02_FormIslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="_01_DosyaIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="02_FormIslemleri.resx">
+      <DependentUpon>02_FormIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_01_DosyaIslemleri.resx">
       <DependentUpon>_01_DosyaIslemleri.cs</DependentUpon>
     </EmbeddedResource>
