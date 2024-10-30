@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TurkcellGorselveNesneTabanliProgramlama201
 {
@@ -45,6 +39,27 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             // Form üzerinden herhangi bir dosya türüne kayıt işlemi yapmaktır.
             saveFileDialog1.ShowDialog();
+        }
+
+        string belgeYolu, belgeAdi;
+
+        private void btnOlustur_Click(object sender, EventArgs e)
+        {
+            belgeAdi = txtAd.Text;
+            StreamWriter sw = File.CreateText(belgeYolu + "\\" + belgeAdi + ".txt");
+            // StreamWriter, metin verisi yazmak için kullanılır
+            // System.IO namespace’i altında bulunur.
+            MessageBox.Show("Belgeniz başarıyla oluşturuldu", "Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void btnKonumSec_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                belgeYolu = folderBrowserDialog1.SelectedPath;
+                txtYol.Text = belgeYolu;
+            }
+
         }
     }
 }
