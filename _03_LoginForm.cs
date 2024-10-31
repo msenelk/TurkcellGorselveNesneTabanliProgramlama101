@@ -50,6 +50,7 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             if(txtKullaniciAdi.Text == "Admin" && txtKullaniciSifre.Text == "123" && textBox3.Text == textBox4.Text)
             {
                 _01_DosyaIslemleri From = new _01_DosyaIslemleri();
+                From.kullanici = txtKullaniciAdi.Text;
                 From.Show();
                 this.Hide();
             }

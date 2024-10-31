@@ -45,6 +45,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnYazdir = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnFolderBrowserDialog
@@ -188,11 +190,31 @@
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(502, 458);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Kullanıcı Adınız:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(658, 458);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 25);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "label3";
+            // 
             // _01_DosyaIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 482);
+            this.ClientSize = new System.Drawing.Size(1002, 539);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnYazdir);
             this.Controls.Add(this.listBox1);
@@ -211,6 +233,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "_01_DosyaIslemleri";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this._01_DosyaIslemleri_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +258,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnYazdir;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

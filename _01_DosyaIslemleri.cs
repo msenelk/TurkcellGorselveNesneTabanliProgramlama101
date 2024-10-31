@@ -79,6 +79,11 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             MessageBox.Show("Yeni metin belgesi kayıt yapıldı.","Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+        public string kullanici;
+        private void _01_DosyaIslemleri_Load(object sender, EventArgs e)
+        {
+            label3.Text = kullanici;
+        }
 
         private void btnKonumSec_Click(object sender, EventArgs e)
         {
