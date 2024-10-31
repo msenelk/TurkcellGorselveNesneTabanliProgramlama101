@@ -18,6 +18,13 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             InitializeComponent();
         }
 
+        void kodOlustur()
+        {
+            Random rastgele = new Random();
+            int sayi = rastgele.Next(1000, 10000);
+            textBox4.Text = sayi.ToString();
+        }
+
         private void _03_LoginForm_Load(object sender, EventArgs e)
         {
         // TabIndex özelliği klavyeden tab sıralaması için kullanılır.
@@ -35,6 +42,21 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             //WindowsDefaultBounds: Windows'un varsayılan konum ve boyut ayarlarıyla açılır.
             //CenterParent: Ana formun ortasında açılır
 
+            kodOlustur();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(txtKullaniciAdi.Text == "Admin" && txtKullaniciSifre.Text == "123" && textBox3.Text == textBox4.Text)
+            {
+                _01_DosyaIslemleri From = new _01_DosyaIslemleri();
+                From.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı Bilgi Girişi: Kullanıcı Adı, Şifre veya Kod Yanlış", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
     }
 }
