@@ -79,6 +79,12 @@
     <Compile Include="_03_LoginForm.Designer.cs">
       <DependentUpon>_03_LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="_04_TemelAracKullanimlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_04_TemelAracKullanimlari.Designer.cs">
+      <DependentUpon>_04_TemelAracKullanimlari.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="_03_LoginForm_SifremiUnuttum.resx">
       <DependentUpon>_03_LoginForm_SifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +105,9 @@
     </Compile>
     <EmbeddedResource Include="_03_LoginForm.resx">
       <DependentUpon>_03_LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_04_TemelAracKullanimlari.resx">
+      <DependentUpon>_04_TemelAracKullanimlari.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

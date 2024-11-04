@@ -16,7 +16,7 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new _03_LoginForm());
+            Application.Run(new _04_TemelAracKullanimlari());
         }
     }
 }
