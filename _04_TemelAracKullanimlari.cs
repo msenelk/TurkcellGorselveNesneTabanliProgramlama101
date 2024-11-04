@@ -29,6 +29,8 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Properties => Text => Label Aracının Görünen Metni
             // Properties => BackColor => Arka plan rengi
             // Properties => ForeColor => Yazı rengi
+            // Properties => DropDownStyle => DropDownList => Combobox için dışarıdan veri girişini engeller, sadece seçim yapılabilir.
+            //               DropDownStyle => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
 
             #endregion // Properties
 
@@ -47,14 +49,23 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             #region TexBox Aracı
             // Kullanıcıdan veri girişi yapmak için kullanılır.
             #endregion // TexBox Aracı
+
+            #region ComboBox Aracı
+            // Çoklu seçim kutusu olarak kullanılan araçtır.
+            // Listede istenilen değerlerden herhangi birini seçtirmek için kullanılır.
+            // Properties => DropDownStyle => DropDownList => Combobox için dışarıdan veri girişini engeller, sadece seçim yapılabilir.
+            //                              => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
+            #endregion // ComboBox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Buraya butona tıklandığında ne olacağını yazıyoruz.
-            label6.Text = "Kocaeli"; // Butona tıklanıldığında label6 nın metnini Kocaeli olarak değiştirecektir.
+            // Buraya butona tıklandığında (_Click) ne olacağını yazıyoruz.
+
+            //label6.Text = "Kocaeli"; // Butona tıklanıldığında label6 nın metnini Kocaeli olarak değiştirecektir.
             label8.Text = textBox1.Text; // Butona tıklanıldığında textBox1 de yer alan metin label8 e atanacaktır.
             // textBox1.Text = "Veri Girişi" TextBox aracına dışarıdan da veri girişi gerçekleştirilebilir.
+            label6.Text = comboBox1.Text; // comboBox1 de seçilen değer label6 a atanacaktır.
         }
     }
 }

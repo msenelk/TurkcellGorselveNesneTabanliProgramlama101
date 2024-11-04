@@ -39,6 +39,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +86,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(260, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 76);
+            this.button1.Size = new System.Drawing.Size(257, 76);
             this.button1.TabIndex = 4;
             this.button1.Text = "Tıkla";
             this.button1.UseVisualStyleBackColor = false;
@@ -129,7 +131,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(256, 181);
+            this.label9.Location = new System.Drawing.Point(297, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 22);
             this.label9.TabIndex = 9;
@@ -137,16 +139,42 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(298, 175);
+            this.textBox1.Location = new System.Drawing.Point(339, 175);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 28);
+            this.textBox1.Size = new System.Drawing.Size(178, 28);
             this.textBox1.TabIndex = 10;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Adana",
+            "Ankara",
+            "İstanbul",
+            "Kocaeli",
+            "Sakarya"});
+            this.comboBox1.Location = new System.Drawing.Point(339, 213);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(178, 30);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(256, 221);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 22);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Şehirler:";
             // 
             // _04_TemelAracKullanimlari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 482);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -181,5 +209,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label10;
     }
 }
