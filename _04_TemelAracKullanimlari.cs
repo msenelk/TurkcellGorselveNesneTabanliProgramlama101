@@ -43,12 +43,18 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Properties => BackColor => Arka plan rengi
             // Properties => ForeColor => Yazı rengi
             #endregion // Button Aracı
+
+            #region TexBox Aracı
+            // Kullanıcıdan veri girişi yapmak için kullanılır.
+            #endregion // TexBox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Buraya butona tıklandığında ne olacağını yazıyoruz.
             label6.Text = "Kocaeli"; // Butona tıklanıldığında label6 nın metnini Kocaeli olarak değiştirecektir.
+            label8.Text = textBox1.Text; // Butona tıklanıldığında textBox1 de yer alan metin label8 e atanacaktır.
+            // textBox1.Text = "Veri Girişi" TextBox aracına dışarıdan da veri girişi gerçekleştirilebilir.
         }
     }
 }
