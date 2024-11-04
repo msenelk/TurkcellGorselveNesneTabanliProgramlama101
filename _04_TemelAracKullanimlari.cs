@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TurkcellGorselveNesneTabanliProgramlama201
 {
@@ -24,11 +25,30 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Toolbox => Araç kutusu
             #endregion
 
+            #region Properties
+            // Properties => Text => Label Aracının Görünen Metni
+            // Properties => BackColor => Arka plan rengi
+            // Properties => ForeColor => Yazı rengi
+
+            #endregion // Properties
+
             #region Label Aracı
             // Açıklamalar için kullanılan, etiket görevi gören araçtır.
             // Amaç ilgili bileşen hakkında bilgi vermektir.
             // Properties => Text => Label Aracının Görünen Metni
             #endregion // Label Aracı
+
+            #region Button Aracı
+            // Olayları gerçekleştirmek için kullanılan tetikleme aracıdır.
+            // Properties => BackColor => Arka plan rengi
+            // Properties => ForeColor => Yazı rengi
+            #endregion // Button Aracı
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Buraya butona tıklandığında ne olacağını yazıyoruz.
+            label6.Text = "Kocaeli"; // Butona tıklanıldığında label6 nın metnini Kocaeli olarak değiştirecektir.
         }
     }
 }
