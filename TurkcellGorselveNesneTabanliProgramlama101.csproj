@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="_03_LoginForm_SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_03_LoginForm_SifremiUnuttum.Designer.cs">
+      <DependentUpon>_03_LoginForm_SifremiUnuttum.cs</DependentUpon>
+    </Compile>
     <Compile Include="_02_FormIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="_03_LoginForm.Designer.cs">
       <DependentUpon>_03_LoginForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="_03_LoginForm_SifremiUnuttum.resx">
+      <DependentUpon>_03_LoginForm_SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_02_FormIslemleri.resx">
       <DependentUpon>_02_FormIslemleri.cs</DependentUpon>
     </EmbeddedResource>

@@ -43,6 +43,7 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             //CenterParent: Ana formun ortasında açılır
 
             kodOlustur();
+            timer1.Start(); 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,11 +54,37 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
                 From.kullanici = txtKullaniciAdi.Text;
                 From.Show();
                 this.Hide();
+
             }
             else
             {
                 MessageBox.Show("Hatalı Bilgi Girişi: Kullanıcı Adı, Şifre veya Kod Yanlış", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _03_LoginForm_SifremiUnuttum frm = new _03_LoginForm_SifremiUnuttum();
+            frm.Show();
+
+        }
+
+        int sayac = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+              sayac++;
+            if(sayac % 2 == 0)
+            {
+                label3.BackColor = Color.Yellow;
+                label3.ForeColor = Color.Red;
+            }
+            else
+            {
+                label3.BackColor = Color.OrangeRed;
+                label3.ForeColor = Color.White;
+            }
+            if(sayac == 10)
+                sayac = 0;
         }
     }
 }
