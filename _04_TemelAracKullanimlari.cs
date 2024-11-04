@@ -77,6 +77,19 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // TC yazılı 11 haneli maske tanımlaması.
             // \T\C00000000000
             #endregion // Maskedtextbox Aracı
+
+            #region Picturebox Aracı
+            // Formda resim kutusu olarak kullanılır.
+            // Forma resim dosyaları ekleyip görüntüleyebilmektedir.
+
+            // Choose Image = Resim Seç
+                //  Resourse Context = Yerel Kaynaktan Resim Seç
+                    // Import = Resmi dahil et..
+                //  Project Resource File = Projede var olan resmi seç
+            // Size Mode = Resmin Modu
+                // StretchImage => Resmi picturebox aracına göre tam kaplar.
+            // Dock in Parent Container = içeriğin tamamını kapla, formun tamamını kaplar
+            #endregion // Picturebox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
