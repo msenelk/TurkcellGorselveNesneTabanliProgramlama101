@@ -56,6 +56,13 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Properties => DropDownStyle => DropDownList => Combobox için dışarıdan veri girişini engeller, sadece seçim yapılabilir.
             //                              => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
             #endregion // ComboBox Aracı
+
+            #region ListBox Aracı
+            // Verilerin listelenmesi için kullanılır.
+            // Yapı olarak comboBox aracına benziyor.
+            // Listelenecek veriler items.Add komutu kullanılarak ListBox aracına eklenir.
+            // listBox1.Items.Add("PosteSQL");
+            #endregion // ListBox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +73,14 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             label8.Text = textBox1.Text; // Butona tıklanıldığında textBox1 de yer alan metin label8 e atanacaktır.
             // textBox1.Text = "Veri Girişi" TextBox aracına dışarıdan da veri girişi gerçekleştirilebilir.
             label6.Text = comboBox1.Text; // comboBox1 de seçilen değer label6 a atanacaktır.
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("JavaScript");
+            listBox1.Items.Add("PosteSQL");
+            comboBox1.Items.Add("Kayseri");
+            listBox1.Items.Add(textBox1.Text); // textBox1 de ki veriyi listBox1 e Items parametresi altında ekledik. (Add)
         }
     }
 }
