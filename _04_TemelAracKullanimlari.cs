@@ -63,6 +63,20 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Listelenecek veriler items.Add komutu kullanılarak ListBox aracına eklenir.
             // listBox1.Items.Add("PosteSQL");
             #endregion // ListBox Aracı
+
+            #region Maskedtextbox Aracı
+            // Maskeli metin kutusu anlamına gelmektedir.
+            // Telefon numarası, e-posta gibi alanlar için kutucuğu maskeler.
+
+            // Özel Tanımlama
+            // A: Alfabetik karakter veya sayısal karakter kabul eder.
+            // L: Yalnızca alfabetik bir karakter kabul eder.
+            // 0: Yalnızca sayısal bir karakter kabul eder.
+            // C: Herhangi bir karakter kabul eder(opsiyonel olarak boş bırakılabilir).
+            // \: Takip eden karakteri sabit metin olarak kabul eder(örneğin \M harfi 'M' olarak görünür).
+            // TC yazılı 11 haneli maske tanımlaması.
+            // \T\C00000000000
+            #endregion // Maskedtextbox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
