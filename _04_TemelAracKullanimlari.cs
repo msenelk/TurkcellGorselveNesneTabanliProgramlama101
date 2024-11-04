@@ -83,13 +83,18 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Forma resim dosyaları ekleyip görüntüleyebilmektedir.
 
             // Choose Image = Resim Seç
-                //  Resourse Context = Yerel Kaynaktan Resim Seç
-                    // Import = Resmi dahil et..
-                //  Project Resource File = Projede var olan resmi seç
+            //  Resourse Context = Yerel Kaynaktan Resim Seç
+            // Import = Resmi dahil et..
+            //  Project Resource File = Projede var olan resmi seç
             // Size Mode = Resmin Modu
-                // StretchImage => Resmi picturebox aracına göre tam kaplar.
+            // StretchImage => Resmi picturebox aracına göre tam kaplar.
             // Dock in Parent Container = içeriğin tamamını kapla, formun tamamını kaplar
             #endregion // Picturebox Aracı
+
+            #region Groupbox Aracı
+            // Araçları gruplandırmak için kullanılan form aracıdır.
+            // Amaç özellikle birbirleriyle ilişkili olan bileşenleri bir arada tutmaktır.
+            #endregion // Groupbox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)

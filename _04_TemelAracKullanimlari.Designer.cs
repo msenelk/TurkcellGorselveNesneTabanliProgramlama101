@@ -51,7 +51,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -206,7 +210,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(125, 218);
+            this.maskedTextBox1.Location = new System.Drawing.Point(99, 31);
             this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(132, 28);
@@ -215,7 +219,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(43, 221);
+            this.label11.Location = new System.Drawing.Point(17, 34);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 22);
             this.label11.TabIndex = 16;
@@ -224,7 +228,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(43, 266);
+            this.label12.Location = new System.Drawing.Point(17, 79);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 22);
             this.label12.TabIndex = 18;
@@ -232,7 +236,7 @@
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(125, 263);
+            this.maskedTextBox2.Location = new System.Drawing.Point(99, 76);
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(132, 28);
@@ -242,7 +246,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(43, 313);
+            this.label13.Location = new System.Drawing.Point(17, 126);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(40, 22);
             this.label13.TabIndex = 20;
@@ -250,7 +254,7 @@
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(125, 310);
+            this.maskedTextBox3.Location = new System.Drawing.Point(99, 123);
             this.maskedTextBox3.Mask = "\\T\\C00000000000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(132, 28);
@@ -260,25 +264,45 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(331, 231);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 169);
+            this.pictureBox1.Size = new System.Drawing.Size(174, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Location = new System.Drawing.Point(331, 221);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(257, 164);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Resim";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.maskedTextBox1);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.maskedTextBox3);
+            this.groupBox2.Controls.Add(this.maskedTextBox2);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Location = new System.Drawing.Point(30, 221);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(255, 164);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
             // 
             // _04_TemelAracKullanimlari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 532);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.maskedTextBox1);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(1086, 532);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label10);
@@ -300,6 +324,9 @@
             this.Text = "_04_TemelAracKullanimlari";
             this.Load += new System.EventHandler(this._04_TemelAracKullanimlari_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +356,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
