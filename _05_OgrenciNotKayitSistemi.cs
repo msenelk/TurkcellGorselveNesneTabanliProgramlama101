@@ -19,7 +19,10 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
 
         private void _05_OgrenciNotKayitSistemi_Load(object sender, EventArgs e)
         {
-
+            #region Araçların Adlandırılması
+            // Adlandırma yapılırken kullanılan aracın ilk üç sessiz harfi kullanılır sonrasında da alacağı işlem yazılır.
+            // txtAdSoyad
+            #endregion
         }
     }
 }
