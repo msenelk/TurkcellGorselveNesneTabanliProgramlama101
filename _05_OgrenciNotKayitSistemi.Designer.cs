@@ -47,10 +47,11 @@
             this.btnTemizle = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.ogrenciNo = new System.Windows.Forms.MaskedTextBox();
             this.txtDurum = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCizgi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,6 +189,7 @@
             this.btnKaydet.TabIndex = 13;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnHesapla
             // 
@@ -211,6 +213,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(101, 307);
             this.listBox1.Name = "listBox1";
@@ -227,13 +230,13 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Numara:";
             // 
-            // maskedTextBox1
+            // ogrenciNo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(104, 198);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(171, 31);
-            this.maskedTextBox1.TabIndex = 18;
+            this.ogrenciNo.Location = new System.Drawing.Point(104, 198);
+            this.ogrenciNo.Mask = "0000";
+            this.ogrenciNo.Name = "ogrenciNo";
+            this.ogrenciNo.Size = new System.Drawing.Size(171, 31);
+            this.ogrenciNo.TabIndex = 18;
             // 
             // txtDurum
             // 
@@ -265,15 +268,26 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCizgi
+            // 
+            this.btnCizgi.Location = new System.Drawing.Point(460, 200);
+            this.btnCizgi.Name = "btnCizgi";
+            this.btnCizgi.Size = new System.Drawing.Size(172, 35);
+            this.btnCizgi.TabIndex = 22;
+            this.btnCizgi.Text = "Çizgi";
+            this.btnCizgi.UseVisualStyleBackColor = true;
+            this.btnCizgi.Click += new System.EventHandler(this.btnCizgi_Click);
+            // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 643);
+            this.Controls.Add(this.btnCizgi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDurum);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.ogrenciNo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnTemizle);
@@ -323,9 +337,10 @@
         private System.Windows.Forms.Button btnTemizle;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox ogrenciNo;
         private System.Windows.Forms.TextBox txtDurum;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCizgi;
     }
 }
