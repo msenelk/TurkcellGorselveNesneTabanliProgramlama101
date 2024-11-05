@@ -284,7 +284,7 @@
             // 
             // btnSayac
             // 
-            this.btnSayac.Location = new System.Drawing.Point(548, 200);
+            this.btnSayac.Location = new System.Drawing.Point(638, 247);
             this.btnSayac.Name = "btnSayac";
             this.btnSayac.Size = new System.Drawing.Size(84, 35);
             this.btnSayac.TabIndex = 23;
@@ -296,7 +296,7 @@
             // 
             this.lblSayac.AutoSize = true;
             this.lblSayac.Enabled = false;
-            this.lblSayac.Location = new System.Drawing.Point(638, 206);
+            this.lblSayac.Location = new System.Drawing.Point(728, 253);
             this.lblSayac.Name = "lblSayac";
             this.lblSayac.Size = new System.Drawing.Size(22, 25);
             this.lblSayac.TabIndex = 24;
@@ -304,7 +304,7 @@
             // 
             // btnMesajKutusu
             // 
-            this.btnMesajKutusu.Location = new System.Drawing.Point(638, 247);
+            this.btnMesajKutusu.Location = new System.Drawing.Point(559, 200);
             this.btnMesajKutusu.Name = "btnMesajKutusu";
             this.btnMesajKutusu.Size = new System.Drawing.Size(84, 35);
             this.btnMesajKutusu.TabIndex = 25;
@@ -316,7 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 643);
+            this.ClientSize = new System.Drawing.Size(977, 520);
             this.Controls.Add(this.btnMesajKutusu);
             this.Controls.Add(this.lblSayac);
             this.Controls.Add(this.btnSayac);

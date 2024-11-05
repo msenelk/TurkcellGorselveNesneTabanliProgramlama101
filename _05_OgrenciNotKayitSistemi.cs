@@ -44,11 +44,20 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            string adSoyad, ders, numara;
-            adSoyad = txtAdSoyad.Text;
-            ders = comboBox1.Text;
-            numara = ogrenciNo.Text;
-            listBox1.Items.Add($"Öğrencinin Adı ve Soyadı: {adSoyad} Seçtiği Ders: {ders} Okul Numarası: {numara} ve ortalaması: {txtOrtalama.Text} ve ders durumu: {txtDurum.Text}");
+            if(txtDurum.Text != "" && txtOrtalama.Text != "")
+            {
+                string adSoyad, ders, numara;
+                adSoyad = txtAdSoyad.Text;
+                ders = comboBox1.Text;
+                numara = ogrenciNo.Text;
+                listBox1.Items.Add($"Öğrencinin Adı ve Soyadı: {adSoyad} Seçtiği Ders: {ders} Okul Numarası: {numara} ve ortalaması: {txtOrtalama.Text} ve ders durumu: {txtDurum.Text}");
+                sayac++;
+                lblSayac.Text = $"Kaydedilen Öğrenci Sayısı: {sayac}";
+            }
+            else
+            {
+                MessageBox.Show("Lütfen ortalama ve durum hesabını yapınız!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCizgi_Click(object sender, EventArgs e)
