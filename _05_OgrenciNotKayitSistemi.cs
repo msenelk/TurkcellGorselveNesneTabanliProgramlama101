@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TurkcellGorselveNesneTabanliProgramlama201
 {
@@ -60,6 +61,20 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             sayac++;
             lblSayac.Text= sayac.ToString();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtAdSoyad.Text = "";
+            txtDurum.Clear();
+            txtOrtalama.Text = "";
+            txtSinav1.Text = "";
+            txtSinav2.Text = "";
+            txtSinav3.Text = "";
+            ogrenciNo.Text = "";
+            comboBox1.SelectedIndex = -1; //Index üzerine elamanları olduğu için temizlemek istediğimiz zaman -1 indexi yazıyoruz.
+
+            txtAdSoyad.Focus(); // İmleci AdSoyad'a focusla, onun üzerinden başlat.
         }
     }
 }
