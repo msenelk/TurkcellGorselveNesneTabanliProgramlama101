@@ -55,6 +55,10 @@
             this.btnSayac = new System.Windows.Forms.Button();
             this.lblSayac = new System.Windows.Forms.Label();
             this.btnMesajKutusu = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.btnForDongusu = new System.Windows.Forms.Button();
+            this.btnForDongusu2 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,9 +223,9 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(101, 307);
+            this.listBox1.Location = new System.Drawing.Point(101, 347);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(782, 179);
+            this.listBox1.Size = new System.Drawing.Size(621, 179);
             this.listBox1.TabIndex = 16;
             // 
             // label8
@@ -312,11 +316,54 @@
             this.btnMesajKutusu.UseVisualStyleBackColor = true;
             this.btnMesajKutusu.Click += new System.EventHandler(this.btnMesajKutusu_Click);
             // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.HorizontalScrollbar = true;
+            this.listBox2.ItemHeight = 25;
+            this.listBox2.Location = new System.Drawing.Point(742, 347);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(150, 179);
+            this.listBox2.TabIndex = 26;
+            // 
+            // btnForDongusu
+            // 
+            this.btnForDongusu.Location = new System.Drawing.Point(104, 294);
+            this.btnForDongusu.Name = "btnForDongusu";
+            this.btnForDongusu.Size = new System.Drawing.Size(172, 35);
+            this.btnForDongusu.TabIndex = 27;
+            this.btnForDongusu.Text = "For Döngüsü";
+            this.btnForDongusu.UseVisualStyleBackColor = true;
+            this.btnForDongusu.Click += new System.EventHandler(this.btnForDongusu_Click);
+            // 
+            // btnForDongusu2
+            // 
+            this.btnForDongusu2.Location = new System.Drawing.Point(282, 294);
+            this.btnForDongusu2.Name = "btnForDongusu2";
+            this.btnForDongusu2.Size = new System.Drawing.Size(172, 35);
+            this.btnForDongusu2.TabIndex = 28;
+            this.btnForDongusu2.Text = "For Döngüsü 2";
+            this.btnForDongusu2.UseVisualStyleBackColor = true;
+            this.btnForDongusu2.Click += new System.EventHandler(this.btnForDongusu2_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(460, 294);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(172, 35);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "ListBox Temizle";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 520);
+            this.ClientSize = new System.Drawing.Size(1052, 577);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnForDongusu2);
+            this.Controls.Add(this.btnForDongusu);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.btnMesajKutusu);
             this.Controls.Add(this.lblSayac);
             this.Controls.Add(this.btnSayac);
@@ -382,5 +429,9 @@
         private System.Windows.Forms.Button btnSayac;
         private System.Windows.Forms.Label lblSayac;
         private System.Windows.Forms.Button btnMesajKutusu;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button btnForDongusu;
+        private System.Windows.Forms.Button btnForDongusu2;
+        private System.Windows.Forms.Button button2;
     }
 }

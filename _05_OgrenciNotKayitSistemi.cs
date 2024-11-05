@@ -94,5 +94,22 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Üçüncü parametrede ise mesaj kutucuğunun evet/hayır butonu alacağını belirttik.
             // Dördüncü parametrede ise mesa kutcuğunun ikonunu belirttik.
         }
+
+        private void btnForDongusu_Click(object sender, EventArgs e)
+        {
+            for(int i = 0;i <10;i++)
+            {
+                listBox2.Items.Add($"- Merhaba {i}");
+            }
+        }
+
+        private void btnForDongusu2_Click(object sender, EventArgs e)
+        {
+            for(int i =1;i <= 20; i++)
+            {
+                if(i % 3 == 0)
+                    listBox2.Items.Add(i);
+            }
+        }
     }
 }
