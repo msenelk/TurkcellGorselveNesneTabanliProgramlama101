@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TurkcellGorselveNesneTabanliProgramlama201
@@ -36,6 +29,16 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
 
             ort = (s1 + s2 + s3) / 3;
             txtOrtalama.Text = ort.ToString(); // int veriyi string veriye dönüştürdük.
+
+            if(ort >= 50)
+            {
+                durum = "Geçti";
+            }
+            else
+            {
+                durum = "Kaldı";
+            }
+            txtDurum.Text = durum; // Burada bir çevirme işlemi yapmadık çünkü durum değişkeni string :)
         }
     }
 }

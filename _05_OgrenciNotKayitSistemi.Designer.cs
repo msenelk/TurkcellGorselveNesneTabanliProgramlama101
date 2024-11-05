@@ -145,6 +145,7 @@
             // 
             // txtOrtalama
             // 
+            this.txtOrtalama.Enabled = false;
             this.txtOrtalama.Location = new System.Drawing.Point(559, 94);
             this.txtOrtalama.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrtalama.Name = "txtOrtalama";
@@ -236,6 +237,7 @@
             // 
             // txtDurum
             // 
+            this.txtDurum.Enabled = false;
             this.txtDurum.Location = new System.Drawing.Point(559, 144);
             this.txtDurum.Margin = new System.Windows.Forms.Padding(2);
             this.txtDurum.Name = "txtDurum";
