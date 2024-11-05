@@ -52,6 +52,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCizgi = new System.Windows.Forms.Button();
+            this.btnSayac = new System.Windows.Forms.Button();
+            this.lblSayac = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -272,17 +274,39 @@
             // 
             this.btnCizgi.Location = new System.Drawing.Point(460, 200);
             this.btnCizgi.Name = "btnCizgi";
-            this.btnCizgi.Size = new System.Drawing.Size(172, 35);
+            this.btnCizgi.Size = new System.Drawing.Size(82, 35);
             this.btnCizgi.TabIndex = 22;
             this.btnCizgi.Text = "Çizgi";
             this.btnCizgi.UseVisualStyleBackColor = true;
             this.btnCizgi.Click += new System.EventHandler(this.btnCizgi_Click);
+            // 
+            // btnSayac
+            // 
+            this.btnSayac.Location = new System.Drawing.Point(548, 200);
+            this.btnSayac.Name = "btnSayac";
+            this.btnSayac.Size = new System.Drawing.Size(84, 35);
+            this.btnSayac.TabIndex = 23;
+            this.btnSayac.Text = "Sayaç";
+            this.btnSayac.UseVisualStyleBackColor = true;
+            this.btnSayac.Click += new System.EventHandler(this.btnSayac_Click);
+            // 
+            // lblSayac
+            // 
+            this.lblSayac.AutoSize = true;
+            this.lblSayac.Enabled = false;
+            this.lblSayac.Location = new System.Drawing.Point(638, 206);
+            this.lblSayac.Name = "lblSayac";
+            this.lblSayac.Size = new System.Drawing.Size(22, 25);
+            this.lblSayac.TabIndex = 24;
+            this.lblSayac.Text = "0";
             // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 643);
+            this.Controls.Add(this.lblSayac);
+            this.Controls.Add(this.btnSayac);
             this.Controls.Add(this.btnCizgi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDurum);
@@ -342,5 +366,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCizgi;
+        private System.Windows.Forms.Button btnSayac;
+        private System.Windows.Forms.Label lblSayac;
     }
 }

@@ -54,5 +54,12 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             listBox1.Items.Add("----------------------------------------");
         }
+
+        int sayac = 0; // Sayacı dışarıda tanımladık çünkü her butona bastığımızda sayacı yeniden tanımlayıp değer ataması yapıyorduç
+        private void btnSayac_Click(object sender, EventArgs e)
+        {
+            sayac++;
+            lblSayac.Text= sayac.ToString();
+        }
     }
 }
