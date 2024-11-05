@@ -76,5 +76,14 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
 
             txtAdSoyad.Focus(); // İmleci AdSoyad'a focusla, onun üzerinden başlat.
         }
+
+        private void btnMesajKutusu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Merhaba Dünya! Derslerimiz devam ediyor.", "Mesaj",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            // İlk parametrede mesajın içeriğini yazdık.
+            // İkinci parametrede mesajın başlığı.
+            // Üçüncü parametrede ise mesaj kutucuğunun evet/hayır butonu alacağını belirttik.
+            // Dördüncü parametrede ise mesa kutcuğunun ikonunu belirttik.
+        }
     }
 }

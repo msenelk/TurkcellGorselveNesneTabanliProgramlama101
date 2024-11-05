@@ -54,6 +54,7 @@
             this.btnCizgi = new System.Windows.Forms.Button();
             this.btnSayac = new System.Windows.Forms.Button();
             this.lblSayac = new System.Windows.Forms.Label();
+            this.btnMesajKutusu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -264,9 +265,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(679, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(679, 76);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 176);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 165);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
@@ -301,11 +302,22 @@
             this.lblSayac.TabIndex = 24;
             this.lblSayac.Text = "0";
             // 
+            // btnMesajKutusu
+            // 
+            this.btnMesajKutusu.Location = new System.Drawing.Point(638, 247);
+            this.btnMesajKutusu.Name = "btnMesajKutusu";
+            this.btnMesajKutusu.Size = new System.Drawing.Size(84, 35);
+            this.btnMesajKutusu.TabIndex = 25;
+            this.btnMesajKutusu.Text = "Mesaj Kutusu";
+            this.btnMesajKutusu.UseVisualStyleBackColor = true;
+            this.btnMesajKutusu.Click += new System.EventHandler(this.btnMesajKutusu_Click);
+            // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 643);
+            this.Controls.Add(this.btnMesajKutusu);
             this.Controls.Add(this.lblSayac);
             this.Controls.Add(this.btnSayac);
             this.Controls.Add(this.btnCizgi);
@@ -369,5 +381,6 @@
         private System.Windows.Forms.Button btnCizgi;
         private System.Windows.Forms.Button btnSayac;
         private System.Windows.Forms.Label lblSayac;
+        private System.Windows.Forms.Button btnMesajKutusu;
     }
 }
