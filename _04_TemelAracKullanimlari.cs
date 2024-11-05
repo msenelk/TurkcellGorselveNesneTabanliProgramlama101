@@ -31,6 +31,7 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Properties => ForeColor => Yazı rengi
             // Properties => DropDownStyle => DropDownList => Combobox için dışarıdan veri girişini engeller, sadece seçim yapılabilir.
             //               DropDownStyle => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
+            // Properties => Enabled => Bu özellik hernagi bir araca dışarıdan müdahale edilmesini/veri girişini kapatıp açmamıza yarıyor.
 
             #endregion // Properties
 
