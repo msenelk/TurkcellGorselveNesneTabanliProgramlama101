@@ -59,6 +59,7 @@
             this.btnForDongusu = new System.Windows.Forms.Button();
             this.btnForDongusu2 = new System.Windows.Forms.Button();
             this.btnListBoxTemizle = new System.Windows.Forms.Button();
+            this.btnWhile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -330,7 +331,7 @@
             // 
             this.btnForDongusu.Location = new System.Drawing.Point(104, 294);
             this.btnForDongusu.Name = "btnForDongusu";
-            this.btnForDongusu.Size = new System.Drawing.Size(172, 35);
+            this.btnForDongusu.Size = new System.Drawing.Size(148, 35);
             this.btnForDongusu.TabIndex = 27;
             this.btnForDongusu.Text = "For Döngüsü";
             this.btnForDongusu.UseVisualStyleBackColor = true;
@@ -338,9 +339,9 @@
             // 
             // btnForDongusu2
             // 
-            this.btnForDongusu2.Location = new System.Drawing.Point(282, 294);
+            this.btnForDongusu2.Location = new System.Drawing.Point(258, 294);
             this.btnForDongusu2.Name = "btnForDongusu2";
-            this.btnForDongusu2.Size = new System.Drawing.Size(172, 35);
+            this.btnForDongusu2.Size = new System.Drawing.Size(148, 35);
             this.btnForDongusu2.TabIndex = 28;
             this.btnForDongusu2.Text = "For Döngüsü 2";
             this.btnForDongusu2.UseVisualStyleBackColor = true;
@@ -348,19 +349,30 @@
             // 
             // btnListBoxTemizle
             // 
-            this.btnListBoxTemizle.Location = new System.Drawing.Point(460, 294);
+            this.btnListBoxTemizle.Location = new System.Drawing.Point(412, 294);
             this.btnListBoxTemizle.Name = "btnListBoxTemizle";
-            this.btnListBoxTemizle.Size = new System.Drawing.Size(172, 35);
+            this.btnListBoxTemizle.Size = new System.Drawing.Size(148, 35);
             this.btnListBoxTemizle.TabIndex = 29;
             this.btnListBoxTemizle.Text = "ListBox Temizle";
             this.btnListBoxTemizle.UseVisualStyleBackColor = true;
             this.btnListBoxTemizle.Click += new System.EventHandler(this.btnListBoxTemizle_Click);
+            // 
+            // btnWhile
+            // 
+            this.btnWhile.Location = new System.Drawing.Point(574, 294);
+            this.btnWhile.Name = "btnWhile";
+            this.btnWhile.Size = new System.Drawing.Size(148, 35);
+            this.btnWhile.TabIndex = 30;
+            this.btnWhile.Text = "While Döngüsü";
+            this.btnWhile.UseVisualStyleBackColor = true;
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 577);
+            this.Controls.Add(this.btnWhile);
             this.Controls.Add(this.btnListBoxTemizle);
             this.Controls.Add(this.btnForDongusu2);
             this.Controls.Add(this.btnForDongusu);
@@ -435,5 +447,6 @@
         private System.Windows.Forms.Button btnForDongusu;
         private System.Windows.Forms.Button btnForDongusu2;
         private System.Windows.Forms.Button btnListBoxTemizle;
+        private System.Windows.Forms.Button btnWhile;
     }
 }

@@ -116,5 +116,15 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             listBox2.Items.Clear();
         }
+
+        private void btnWhile_Click(object sender, EventArgs e)
+        {
+            int x = 1;
+            while (x <= 10)
+            {
+                listBox2.Items.Add("While Döngüsü");
+                x++;
+            }
+        }
     }
 }
