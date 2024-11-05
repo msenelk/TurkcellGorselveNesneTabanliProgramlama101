@@ -58,7 +58,7 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.btnForDongusu = new System.Windows.Forms.Button();
             this.btnForDongusu2 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnListBoxTemizle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -346,21 +346,22 @@
             this.btnForDongusu2.UseVisualStyleBackColor = true;
             this.btnForDongusu2.Click += new System.EventHandler(this.btnForDongusu2_Click);
             // 
-            // button2
+            // btnListBoxTemizle
             // 
-            this.button2.Location = new System.Drawing.Point(460, 294);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 35);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "ListBox Temizle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnListBoxTemizle.Location = new System.Drawing.Point(460, 294);
+            this.btnListBoxTemizle.Name = "btnListBoxTemizle";
+            this.btnListBoxTemizle.Size = new System.Drawing.Size(172, 35);
+            this.btnListBoxTemizle.TabIndex = 29;
+            this.btnListBoxTemizle.Text = "ListBox Temizle";
+            this.btnListBoxTemizle.UseVisualStyleBackColor = true;
+            this.btnListBoxTemizle.Click += new System.EventHandler(this.btnListBoxTemizle_Click);
             // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 577);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnListBoxTemizle);
             this.Controls.Add(this.btnForDongusu2);
             this.Controls.Add(this.btnForDongusu);
             this.Controls.Add(this.listBox2);
@@ -393,6 +394,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "_05_OgrenciNotKayitSistemi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OgrenciNotKayitSistemi";
             this.Load += new System.EventHandler(this._05_OgrenciNotKayitSistemi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -432,6 +434,6 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button btnForDongusu;
         private System.Windows.Forms.Button btnForDongusu2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnListBoxTemizle;
     }
 }

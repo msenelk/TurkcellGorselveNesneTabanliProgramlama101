@@ -111,5 +111,10 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
                     listBox2.Items.Add(i);
             }
         }
+
+        private void btnListBoxTemizle_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
+        }
     }
 }
