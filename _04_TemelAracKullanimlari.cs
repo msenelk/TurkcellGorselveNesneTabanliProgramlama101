@@ -96,6 +96,15 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Araçları gruplandırmak için kullanılan form aracıdır.
             // Amaç özellikle birbirleriyle ilişkili olan bileşenleri bir arada tutmaktır.
             #endregion // Groupbox Aracı
+
+            #region Messagebox Aracı
+            // Kullanıcıya bir dialog penceresi aracılığıyla mesaj vermek için kullanılır.
+            // 4 tane parametre alır.
+                // 1. Mesaj
+                // 2. Başlık
+                // 3. Buton Türü
+                // 4. İkon
+            #endregion // Messagebox Aracı
         }
 
         private void button1_Click(object sender, EventArgs e)
