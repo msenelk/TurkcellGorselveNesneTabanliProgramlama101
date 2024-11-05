@@ -196,6 +196,7 @@
             this.btnHesapla.TabIndex = 14;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // btnTemizle
             // 

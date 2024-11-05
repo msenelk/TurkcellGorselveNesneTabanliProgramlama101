@@ -24,5 +24,18 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // txtAdSoyad
             #endregion
         }
+
+        private void btnHesapla_Click(object sender, EventArgs e)
+        {
+            int s1, s2, s3, ort;
+            string durum;
+
+            s1 = Convert.ToInt16(txtSinav1.Text); // string veriden int veriye dönüşüm yapmak için Covert metodunu kullandık.
+            s2=Convert.ToInt16(txtSinav2.Text);
+            s3=Convert.ToInt16(txtSinav3.Text);
+
+            ort = (s1 + s2 + s3) / 3;
+            txtOrtalama.Text = ort.ToString(); // int veriyi string veriye dönüştürdük.
+        }
     }
 }
