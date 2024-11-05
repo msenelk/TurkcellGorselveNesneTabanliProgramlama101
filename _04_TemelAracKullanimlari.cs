@@ -32,6 +32,12 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Properties => DropDownStyle => DropDownList => Combobox için dışarıdan veri girişini engeller, sadece seçim yapılabilir.
             //               DropDownStyle => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
             // Properties => Enabled => Bu özellik hernagi bir araca dışarıdan müdahale edilmesini/veri girişini kapatıp açmamıza yarıyor.
+            // StartPositions => Uygulamanın hangi poziyonda açılacağını belirliyoruz.
+                // CenterScreen => Formun ekranın tam ortasında açılmasını sağlar.
+                // CenterParent => Formun, ebeveyn penceresinin merkezinde açılmasını sağlar.
+                // WindowsDefaultLocation => Form, işletim sistemi tarafından belirlenen varsayılan konumda açılır.
+                // WindowsDefaultBounds => Form hem varsayılan konumda hem de varsayılan boyutlarla açılır.
+             // Opacity => Şeffaflık..
 
             #endregion // Properties
 
@@ -100,10 +106,10 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             #region Messagebox Aracı
             // Kullanıcıya bir dialog penceresi aracılığıyla mesaj vermek için kullanılır.
             // 4 tane parametre alır.
-                // 1. Mesaj
-                // 2. Başlık
-                // 3. Buton Türü
-                // 4. İkon
+            // 1. Mesaj
+            // 2. Başlık
+            // 3. Buton Türü
+            // 4. İkon
             #endregion // Messagebox Aracı
         }
 
