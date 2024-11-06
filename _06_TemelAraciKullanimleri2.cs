@@ -19,6 +19,10 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Menüler alt tarafa ve sağ tarafa doğru uzayabilir.
             #endregion // Menustrip Aracı
 
+            #region Web Browser Aracı
+            // Form üzerinden web sayfalarına bir yarayıcı ile ulaşmak için kullanılır.
+            // Varsayalına olarak internet explorer alt yapısını kullanmaktadır.
+            #endregion // Web Browser Aracı
 
             InitializeComponent();
         }
@@ -47,6 +51,26 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         private void turuncuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.Orange;
+        }
+
+        private void googleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.google.com.tr/?hl=tr");
+        }
+
+        private void youTubeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.youtube.com");
+        }
+
+        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://x.com/home");
+        }
+
+        private void muratYücedağToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://muratyucedag.com");
         }
     }
 }
