@@ -24,6 +24,12 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Varsayalına olarak internet explorer alt yapısını kullanmaktadır.
             #endregion // Web Browser Aracı
 
+            #region Context Menustrip Aracı
+            // Form üzerinde sağ tuş münüsü oluşturmak için kullanılır.
+            // Bir formda birden fazla Context Menustrip Aracı oluşturulabilir. Kullanılacak olan sağ tuş menüsü formun özellikleri pencersinden ayarlanır.
+                // ContextMenuStrip ile hangi menüyü kullanacağımızı seçiyoruz.
+            #endregion // Context Menustrip Aracı
+
             InitializeComponent();
         }
 
@@ -71,6 +77,11 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         private void muratYücedağToolStripMenuItem_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://muratyucedag.com");
+        }
+
+        private void hakkımızdaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu uygulamayı Turkcell Geleceği Yazanlar platformu dersleri altında gerçekleştirmekteyiz.", "Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
