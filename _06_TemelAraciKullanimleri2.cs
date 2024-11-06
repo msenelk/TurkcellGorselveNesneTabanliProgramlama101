@@ -27,8 +27,14 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             #region Context Menustrip Aracı
             // Form üzerinde sağ tuş münüsü oluşturmak için kullanılır.
             // Bir formda birden fazla Context Menustrip Aracı oluşturulabilir. Kullanılacak olan sağ tuş menüsü formun özellikleri pencersinden ayarlanır.
-                // ContextMenuStrip ile hangi menüyü kullanacağımızı seçiyoruz.
+            // ContextMenuStrip ile hangi menüyü kullanacağımızı seçiyoruz.
             #endregion // Context Menustrip Aracı
+
+            #region Timer Aracı
+            // Zamanlayıcı olarak adlandırılan Timer aracında amaç istenen işlemlerin belirli periyotlarda otomatik olarak gerçekleştirilmesidir.
+            // Timer form üzerinde görülen bir araç değildir, arka planda çalışır ve özellikleri çok azdır.
+                // Interval => Aralık demek 1000 = 1 saniye demek
+            #endregion
 
             InitializeComponent();
         }
@@ -83,5 +89,19 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             MessageBox.Show("Bu uygulamayı Turkcell Geleceği Yazanlar platformu dersleri altında gerçekleştirmekteyiz.", "Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        int sayac=0;
+        private void başlatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sayac++;
+            label2.Text = sayac.ToString();
+            if (sayac == 50) // Burada timer 50 olunca durmasını söyledik.
+                timer1.Stop();
+        }
+
+
     }
 }
