@@ -32,5 +32,21 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             label1.Text = "Yazdırma Komutları Menü Alanına Tıklandı.";
         }
+
+        private void sarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Forum ile ilgili bir işlem yapılacaksa This komutu kullanılır.
+            this.BackColor = Color.Yellow;
+        }
+
+        private void kırmızıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+
+        private void turuncuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Orange;
+        }
     }
 }

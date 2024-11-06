@@ -187,18 +187,21 @@
             this.sarıToolStripMenuItem.Name = "sarıToolStripMenuItem";
             this.sarıToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sarıToolStripMenuItem.Text = "Sarı";
+            this.sarıToolStripMenuItem.Click += new System.EventHandler(this.sarıToolStripMenuItem_Click);
             // 
             // kırmızıToolStripMenuItem
             // 
             this.kırmızıToolStripMenuItem.Name = "kırmızıToolStripMenuItem";
             this.kırmızıToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.kırmızıToolStripMenuItem.Text = "Kırmızı";
+            this.kırmızıToolStripMenuItem.Click += new System.EventHandler(this.kırmızıToolStripMenuItem_Click);
             // 
             // turuncuToolStripMenuItem
             // 
             this.turuncuToolStripMenuItem.Name = "turuncuToolStripMenuItem";
             this.turuncuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.turuncuToolStripMenuItem.Text = "Turuncu";
+            this.turuncuToolStripMenuItem.Click += new System.EventHandler(this.turuncuToolStripMenuItem_Click);
             // 
             // ayarlarToolStripMenuItem
             // 
