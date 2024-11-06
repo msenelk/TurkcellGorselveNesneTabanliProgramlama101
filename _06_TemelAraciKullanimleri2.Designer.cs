@@ -67,6 +67,12 @@
             this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBaslat = new System.Windows.Forms.Button();
+            this.btnDurdur = new System.Windows.Forms.Button();
+            this.timerTrafik = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -303,10 +309,10 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(585, 31);
+            this.webBrowser1.Location = new System.Drawing.Point(585, 332);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(427, 462);
+            this.webBrowser1.Size = new System.Drawing.Size(427, 161);
             this.webBrowser1.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -348,7 +354,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(163, 144);
+            this.label2.Location = new System.Drawing.Point(106, 511);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 22);
             this.label2.TabIndex = 4;
@@ -358,12 +364,62 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(78, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(347, 99);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(604, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 7;
+            // 
+            // btnBaslat
+            // 
+            this.btnBaslat.Location = new System.Drawing.Point(828, 99);
+            this.btnBaslat.Name = "btnBaslat";
+            this.btnBaslat.Size = new System.Drawing.Size(105, 47);
+            this.btnBaslat.TabIndex = 8;
+            this.btnBaslat.Text = "Başlat";
+            this.btnBaslat.UseVisualStyleBackColor = true;
+            this.btnBaslat.Click += new System.EventHandler(this.btnBaslat_Click);
+            // 
+            // btnDurdur
+            // 
+            this.btnDurdur.Location = new System.Drawing.Point(828, 152);
+            this.btnDurdur.Name = "btnDurdur";
+            this.btnDurdur.Size = new System.Drawing.Size(105, 47);
+            this.btnDurdur.TabIndex = 9;
+            this.btnDurdur.Text = "Durdur";
+            this.btnDurdur.UseVisualStyleBackColor = true;
+            this.btnDurdur.Click += new System.EventHandler(this.btnDurdur_Click);
+            // 
+            // timerTrafik
+            // 
+            this.timerTrafik.Tick += new System.EventHandler(this.timerTrafik_Tick);
+            // 
             // _06_TemelAraciKullanimleri2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 542);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.btnDurdur);
+            this.Controls.Add(this.btnBaslat);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
@@ -422,5 +478,11 @@
         private System.Windows.Forms.ToolStripMenuItem başlatToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnBaslat;
+        private System.Windows.Forms.Button btnDurdur;
+        private System.Windows.Forms.Timer timerTrafik;
     }
 }

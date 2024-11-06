@@ -33,8 +33,10 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             #region Timer Aracı
             // Zamanlayıcı olarak adlandırılan Timer aracında amaç istenen işlemlerin belirli periyotlarda otomatik olarak gerçekleştirilmesidir.
             // Timer form üzerinde görülen bir araç değildir, arka planda çalışır ve özellikleri çok azdır.
-                // Interval => Aralık demek 1000 = 1 saniye demek
-            #endregion
+                // Interval: Timer'ın tetiklenme aralığını milisaniye cinsinden belirler. Örneğin, Interval 1000 milisaniye olarak ayarlanırsa, timer her saniyede bir tetiklenir.
+                //Enabled: Timer'ın çalışıp çalışmadığını belirleyen bir özelliktir. true ise timer aktif hale gelir ve belirlenen aralıkta Tick olayı tetiklenir.
+                //Tick: Timer her tetiklendiğinde oluşan olaydır.Bu olayda timer ile yapılması gereken işlemler tanımlanır.
+            #endregion // Timer Aracı
 
             InitializeComponent();
         }
@@ -102,6 +104,36 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
                 timer1.Stop();
         }
 
+        private void btnBaslat_Click(object sender, EventArgs e)
+        {
+            timerTrafik.Start();
+        }
 
+        private void btnDurdur_Click(object sender, EventArgs e)
+        {
+            timerTrafik.Stop();
+        }
+
+        int sure = 0;
+        private void timerTrafik_Tick(object sender, EventArgs e)
+        {
+            this.Text = sure.ToString();
+            sure++;
+            if (sure >= 0 && sure <= 30)
+            { 
+                panel1.BackColor = Color.Red;
+                panel3.BackColor = Color.Transparent;
+            }
+            if (sure > 30 && sure <= 40) { 
+                panel2.BackColor = Color.Yellow;
+            }
+            if(sure >40 && sure <= 70) { 
+                panel3.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor= Color.Transparent;
+            }
+            if (sure == 71)
+                sure = 0;
+        }
     }
 }
