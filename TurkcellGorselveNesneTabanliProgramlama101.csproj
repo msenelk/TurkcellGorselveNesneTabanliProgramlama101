@@ -91,6 +91,12 @@
     <Compile Include="_04_TemelAracKullanimlari.Designer.cs">
       <DependentUpon>_04_TemelAracKullanimlari.cs</DependentUpon>
     </Compile>
+    <Compile Include="_06_TemelAraciKullanimleri2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_06_TemelAraciKullanimleri2.Designer.cs">
+      <DependentUpon>_06_TemelAraciKullanimleri2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="_03_LoginForm_SifremiUnuttum.resx">
       <DependentUpon>_03_LoginForm_SifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="_05_OgrenciNotKayitSistemi.resx">
       <DependentUpon>_05_OgrenciNotKayitSistemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_06_TemelAraciKullanimleri2.resx">
+      <DependentUpon>_06_TemelAraciKullanimleri2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

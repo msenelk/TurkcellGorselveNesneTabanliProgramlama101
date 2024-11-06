@@ -33,11 +33,11 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             //               DropDownStyle => Simple => Listesiz kullanım sunmakta, pek tercih edilebilir değil.
             // Properties => Enabled => Bu özellik hernagi bir araca dışarıdan müdahale edilmesini/veri girişini kapatıp açmamıza yarıyor.
             // StartPositions => Uygulamanın hangi poziyonda açılacağını belirliyoruz.
-                // CenterScreen => Formun ekranın tam ortasında açılmasını sağlar.
-                // CenterParent => Formun, ebeveyn penceresinin merkezinde açılmasını sağlar.
-                // WindowsDefaultLocation => Form, işletim sistemi tarafından belirlenen varsayılan konumda açılır.
-                // WindowsDefaultBounds => Form hem varsayılan konumda hem de varsayılan boyutlarla açılır.
-             // Opacity => Şeffaflık..
+            // CenterScreen => Formun ekranın tam ortasında açılmasını sağlar.
+            // CenterParent => Formun, ebeveyn penceresinin merkezinde açılmasını sağlar.
+            // WindowsDefaultLocation => Form, işletim sistemi tarafından belirlenen varsayılan konumda açılır.
+            // WindowsDefaultBounds => Form hem varsayılan konumda hem de varsayılan boyutlarla açılır.
+            // Opacity => Şeffaflık..
 
             #endregion // Properties
 
