@@ -60,6 +60,8 @@
             this.btnForDongusu2 = new System.Windows.Forms.Button();
             this.btnListBoxTemizle = new System.Windows.Forms.Button();
             this.btnWhile = new System.Windows.Forms.Button();
+            this.btnDizi1 = new System.Windows.Forms.Button();
+            this.btnDizi2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -367,11 +369,33 @@
             this.btnWhile.UseVisualStyleBackColor = true;
             this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
+            // btnDizi1
+            // 
+            this.btnDizi1.Location = new System.Drawing.Point(733, 294);
+            this.btnDizi1.Name = "btnDizi1";
+            this.btnDizi1.Size = new System.Drawing.Size(79, 35);
+            this.btnDizi1.TabIndex = 31;
+            this.btnDizi1.Text = "Dizi 1";
+            this.btnDizi1.UseVisualStyleBackColor = true;
+            this.btnDizi1.Click += new System.EventHandler(this.btnDizi1_Click);
+            // 
+            // btnDizi2
+            // 
+            this.btnDizi2.Location = new System.Drawing.Point(818, 294);
+            this.btnDizi2.Name = "btnDizi2";
+            this.btnDizi2.Size = new System.Drawing.Size(79, 35);
+            this.btnDizi2.TabIndex = 32;
+            this.btnDizi2.Text = "Dizi 2";
+            this.btnDizi2.UseVisualStyleBackColor = true;
+            this.btnDizi2.Click += new System.EventHandler(this.btnDizi2_Click);
+            // 
             // _05_OgrenciNotKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 577);
+            this.Controls.Add(this.btnDizi2);
+            this.Controls.Add(this.btnDizi1);
             this.Controls.Add(this.btnWhile);
             this.Controls.Add(this.btnListBoxTemizle);
             this.Controls.Add(this.btnForDongusu2);
@@ -448,5 +472,7 @@
         private System.Windows.Forms.Button btnForDongusu2;
         private System.Windows.Forms.Button btnListBoxTemizle;
         private System.Windows.Forms.Button btnWhile;
+        private System.Windows.Forms.Button btnDizi1;
+        private System.Windows.Forms.Button btnDizi2;
     }
 }

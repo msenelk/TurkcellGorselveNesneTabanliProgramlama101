@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlTypes;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -82,6 +83,8 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             txtSinav3.Text = "";
             ogrenciNo.Text = "";
             comboBox1.SelectedIndex = -1; //Index üzerine elamanları olduğu için temizlemek istediğimiz zaman -1 indexi yazıyoruz.
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
 
             txtAdSoyad.Focus(); // İmleci AdSoyad'a focusla, onun üzerinden başlat.
         }
@@ -124,6 +127,25 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             {
                 listBox2.Items.Add("While Döngüsü");
                 x++;
+            }
+        }
+        private void btnDizi1_Click(object sender, EventArgs e)
+        {
+            string[] sehirler = { "Adana", "Ankara", "Kayseri", "Sivas", "Ordu", "Samsun" };
+            listBox2.Items.Add(sehirler[3]);
+        }
+
+        private void btnDizi2_Click(object sender, EventArgs e)
+        {
+            int[] sayilar = { 34, 68, 77, 54,47, 67, 78, 112, 12 };
+            //for(int i = 0; i < sayilar.Length; i++)
+            //{
+            //    listBox2.Items.Add(sayilar[i]);
+            //}
+            foreach (int k in sayilar)
+            {
+                if(k % 4 == 0)
+                    listBox2.Items.Add(k);
             }
         }
     }
