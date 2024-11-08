@@ -116,6 +116,11 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // İki durumu vardır. True / False
             #endregion
 
+            #region Radiobutton Aracı
+            // Çoklu seçim işlemlerinde sadece 1 tane değer seçimine izin verilen bir araçtır.
+            // form üzerinde bulunan checkBox araçlarının tamamı seçilebilirken, radiobutton ise aynı anda sadece bir tane seçilebilmektedir.
+            #endregion // Radiobutton Aracı
+
             InitializeComponent();
         }
 
@@ -271,6 +276,7 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         private void button1_Click(object sender, EventArgs e)
         {
             checkBox1.Checked = true; // İlgi checkBox seçilmiş olarak geliyor.
+            radioButton3.Checked = true; // İlgili radiobutton seçilmiş olarak gelecek.
         }
     }
 }
