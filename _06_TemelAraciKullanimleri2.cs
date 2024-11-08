@@ -109,6 +109,13 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
             // Minimuz ve maximum değerleri değiştirilebilir.
             #endregion
 
+            #region checkBox Aracı
+            // Kontrol kutusu anlamına gelir.
+            // Çoklu seçim durumlarında kullanılmaktadır.
+            // Karar yapılarına bağlı olarak çalışır.
+            // İki durumu vardır. True / False
+            #endregion
+
             InitializeComponent();
         }
 
@@ -259,6 +266,11 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
                 timer4.Stop();
                 MessageBox.Show("Tüm işlemler tamamlandı.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = true; // İlgi checkBox seçilmiş olarak geliyor.
         }
     }
 }
