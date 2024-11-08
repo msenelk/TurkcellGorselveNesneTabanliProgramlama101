@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.programlamaDilleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,6 +77,9 @@
             this.btnDurdur = new System.Windows.Forms.Button();
             this.timerTrafik = new System.Windows.Forms.Timer(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnArttir = new System.Windows.Forms.Button();
+            this.btnAzalt = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -236,28 +239,28 @@
             // googleToolStripMenuItem
             // 
             this.googleToolStripMenuItem.Name = "googleToolStripMenuItem";
-            this.googleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.googleToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.googleToolStripMenuItem.Text = "Google";
             this.googleToolStripMenuItem.Click += new System.EventHandler(this.googleToolStripMenuItem_Click);
             // 
             // youTubeToolStripMenuItem
             // 
             this.youTubeToolStripMenuItem.Name = "youTubeToolStripMenuItem";
-            this.youTubeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.youTubeToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.youTubeToolStripMenuItem.Text = "YouTube";
             this.youTubeToolStripMenuItem.Click += new System.EventHandler(this.youTubeToolStripMenuItem_Click);
             // 
             // twitterToolStripMenuItem
             // 
             this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
-            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.twitterToolStripMenuItem.Text = "Twitter";
             this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
             // 
             // muratYücedağToolStripMenuItem
             // 
             this.muratYücedağToolStripMenuItem.Name = "muratYücedağToolStripMenuItem";
-            this.muratYücedağToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.muratYücedağToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.muratYücedağToolStripMenuItem.Text = "Murat Yücedağ";
             this.muratYücedağToolStripMenuItem.Click += new System.EventHandler(this.muratYücedağToolStripMenuItem_Click);
             // 
@@ -276,31 +279,31 @@
             // yardımToolStripMenuItem
             // 
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.yardımToolStripMenuItem.Text = "Yardım";
             // 
             // hakkımızdaToolStripMenuItem
             // 
             this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
-            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
             // 
             // başlatToolStripMenuItem
             // 
             this.başlatToolStripMenuItem.Name = "başlatToolStripMenuItem";
-            this.başlatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.başlatToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.başlatToolStripMenuItem.Text = "Başlat";
             this.başlatToolStripMenuItem.Click += new System.EventHandler(this.başlatToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             // 
             // label1
@@ -416,19 +419,47 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(22, 162);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Bolge";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Bolge";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(584, 333);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
+            // 
+            // btnArttir
+            // 
+            this.btnArttir.Location = new System.Drawing.Point(633, 299);
+            this.btnArttir.Name = "btnArttir";
+            this.btnArttir.Size = new System.Drawing.Size(98, 47);
+            this.btnArttir.TabIndex = 11;
+            this.btnArttir.Text = "Arttır";
+            this.btnArttir.UseVisualStyleBackColor = true;
+            this.btnArttir.Click += new System.EventHandler(this.btnArttir_Click);
+            // 
+            // btnAzalt
+            // 
+            this.btnAzalt.Location = new System.Drawing.Point(752, 299);
+            this.btnAzalt.Name = "btnAzalt";
+            this.btnAzalt.Size = new System.Drawing.Size(98, 47);
+            this.btnAzalt.TabIndex = 12;
+            this.btnAzalt.Text = "Azalt";
+            this.btnAzalt.UseVisualStyleBackColor = true;
+            this.btnAzalt.Click += new System.EventHandler(this.btnAzalt_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(633, 379);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(391, 35);
+            this.progressBar1.TabIndex = 13;
+            this.progressBar1.Value = 60;
             // 
             // _06_TemelAraciKullanimleri2
             // 
@@ -436,6 +467,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 542);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.btnAzalt);
+            this.Controls.Add(this.btnArttir);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.btnDurdur);
             this.Controls.Add(this.btnBaslat);
@@ -508,5 +542,8 @@
         private System.Windows.Forms.Button btnDurdur;
         private System.Windows.Forms.Timer timerTrafik;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button btnArttir;
+        private System.Windows.Forms.Button btnAzalt;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
