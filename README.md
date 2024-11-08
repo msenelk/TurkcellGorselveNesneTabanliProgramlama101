@@ -153,3 +153,5 @@
 
 # 🔘 RadioButton Aracı
 - Çoklu seçimde sadece bir seçenek belirlenir; aynı anda yalnızca bir seçenek işaretlenebilir.
+
+![Sertifika](sertifika.png)
