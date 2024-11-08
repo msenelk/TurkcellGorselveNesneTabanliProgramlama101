@@ -221,5 +221,44 @@ namespace TurkcellGorselveNesneTabanliProgramlama201
         {
             progressBar1.Value -= 10;
         }
+
+        private void btnBaslatPrgBarIslem_Click(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            prgBarIslem1.Value += 10;
+            txtIslem1Deger.Text = prgBarIslem1.Value.ToString();
+            if (prgBarIslem1.Value == 100)
+            {
+                timer2.Stop();
+                timer3.Start();
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            prgBarIslem2.Value += 10;
+            txtIslem2Deger.Text = prgBarIslem2.Value.ToString(); // Ödev kapsamında bar değerleri yazdırıldı.
+            if(prgBarIslem2.Value == 100)
+            {
+                timer3.Stop();
+                timer4.Start();
+            }
+
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            prgBarIslem3.Value += 10;
+            txtIslem3Deger.Text=prgBarIslem3.Value.ToString();
+            if(prgBarIslem3 .Value == 100)
+            {
+                timer4.Stop();
+                MessageBox.Show("Tüm işlemler tamamlandı.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+        }
     }
 }

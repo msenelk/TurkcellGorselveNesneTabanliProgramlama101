@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.programlamaDilleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +80,19 @@
             this.btnArttir = new System.Windows.Forms.Button();
             this.btnAzalt = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.prgBarIslem1 = new System.Windows.Forms.ProgressBar();
+            this.txtIslem1 = new System.Windows.Forms.Label();
+            this.txtIslem2 = new System.Windows.Forms.Label();
+            this.prgBarIslem2 = new System.Windows.Forms.ProgressBar();
+            this.txtIslem3 = new System.Windows.Forms.Label();
+            this.prgBarIslem3 = new System.Windows.Forms.ProgressBar();
+            this.btnBaslatPrgBarIslem = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.txtIslem1Deger = new System.Windows.Forms.Label();
+            this.txtIslem2Deger = new System.Windows.Forms.Label();
+            this.txtIslem3Deger = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -95,7 +108,7 @@
             this.ayarlarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1036, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1036, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -108,7 +121,7 @@
             this.javaToolStripMenuItem1,
             this.pythonToolStripMenuItem});
             this.programlamaDilleriToolStripMenuItem.Name = "programlamaDilleriToolStripMenuItem";
-            this.programlamaDilleriToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.programlamaDilleriToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
             this.programlamaDilleriToolStripMenuItem.Text = "Programlama Dilleri";
             // 
             // cToolStripMenuItem
@@ -201,7 +214,7 @@
             this.kırmızıToolStripMenuItem,
             this.turuncuToolStripMenuItem});
             this.renklerToolStripMenuItem.Name = "renklerToolStripMenuItem";
-            this.renklerToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.renklerToolStripMenuItem.Size = new System.Drawing.Size(72, 26);
             this.renklerToolStripMenuItem.Text = "Renkler";
             // 
             // sarıToolStripMenuItem
@@ -233,7 +246,7 @@
             this.twitterToolStripMenuItem,
             this.muratYücedağToolStripMenuItem});
             this.webSiteleriToolStripMenuItem.Name = "webSiteleriToolStripMenuItem";
-            this.webSiteleriToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.webSiteleriToolStripMenuItem.Size = new System.Drawing.Size(103, 26);
             this.webSiteleriToolStripMenuItem.Text = "Web Siteleri";
             // 
             // googleToolStripMenuItem
@@ -273,7 +286,7 @@
             this.toolStripSeparator1,
             this.çıkışToolStripMenuItem});
             this.ayarlarToolStripMenuItem.Name = "ayarlarToolStripMenuItem";
-            this.ayarlarToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.ayarlarToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.ayarlarToolStripMenuItem.Text = "Ayarlar";
             // 
             // yardımToolStripMenuItem
@@ -317,10 +330,10 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(633, 88);
+            this.webBrowser1.Location = new System.Drawing.Point(518, 133);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(391, 161);
+            this.webBrowser1.Size = new System.Drawing.Size(404, 156);
             this.webBrowser1.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -376,28 +389,28 @@
             // 
             this.panel1.Location = new System.Drawing.Point(16, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(133, 77);
+            this.panel1.Size = new System.Drawing.Size(146, 72);
             this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(189, 43);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(133, 77);
+            this.panel2.Size = new System.Drawing.Size(146, 72);
             this.panel2.TabIndex = 6;
             // 
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(362, 43);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(133, 77);
+            this.panel3.Size = new System.Drawing.Size(146, 72);
             this.panel3.TabIndex = 7;
             // 
             // btnBaslat
             // 
             this.btnBaslat.Location = new System.Drawing.Point(518, 43);
             this.btnBaslat.Name = "btnBaslat";
-            this.btnBaslat.Size = new System.Drawing.Size(88, 32);
+            this.btnBaslat.Size = new System.Drawing.Size(101, 27);
             this.btnBaslat.TabIndex = 8;
             this.btnBaslat.Text = "Başlat";
             this.btnBaslat.UseVisualStyleBackColor = true;
@@ -407,7 +420,7 @@
             // 
             this.btnDurdur.Location = new System.Drawing.Point(518, 88);
             this.btnDurdur.Name = "btnDurdur";
-            this.btnDurdur.Size = new System.Drawing.Size(88, 32);
+            this.btnDurdur.Size = new System.Drawing.Size(101, 27);
             this.btnDurdur.TabIndex = 9;
             this.btnDurdur.Text = "Durdur";
             this.btnDurdur.UseVisualStyleBackColor = true;
@@ -419,25 +432,25 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(22, 162);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(16, 133);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Bolge";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(584, 333);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Bolge";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(492, 302);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
             // btnArttir
             // 
-            this.btnArttir.Location = new System.Drawing.Point(633, 299);
+            this.btnArttir.Location = new System.Drawing.Point(16, 441);
             this.btnArttir.Name = "btnArttir";
-            this.btnArttir.Size = new System.Drawing.Size(98, 47);
+            this.btnArttir.Size = new System.Drawing.Size(111, 42);
             this.btnArttir.TabIndex = 11;
             this.btnArttir.Text = "Arttır";
             this.btnArttir.UseVisualStyleBackColor = true;
@@ -445,9 +458,9 @@
             // 
             // btnAzalt
             // 
-            this.btnAzalt.Location = new System.Drawing.Point(752, 299);
+            this.btnAzalt.Location = new System.Drawing.Point(133, 441);
             this.btnAzalt.Name = "btnAzalt";
-            this.btnAzalt.Size = new System.Drawing.Size(98, 47);
+            this.btnAzalt.Size = new System.Drawing.Size(111, 42);
             this.btnAzalt.TabIndex = 12;
             this.btnAzalt.Text = "Azalt";
             this.btnAzalt.UseVisualStyleBackColor = true;
@@ -455,11 +468,108 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(633, 379);
+            this.progressBar1.Location = new System.Drawing.Point(15, 498);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(391, 35);
+            this.progressBar1.Size = new System.Drawing.Size(404, 30);
             this.progressBar1.TabIndex = 13;
             this.progressBar1.Value = 60;
+            // 
+            // prgBarIslem1
+            // 
+            this.prgBarIslem1.Location = new System.Drawing.Point(646, 317);
+            this.prgBarIslem1.Name = "prgBarIslem1";
+            this.prgBarIslem1.Size = new System.Drawing.Size(349, 30);
+            this.prgBarIslem1.TabIndex = 14;
+            // 
+            // txtIslem1
+            // 
+            this.txtIslem1.AutoSize = true;
+            this.txtIslem1.Location = new System.Drawing.Point(514, 317);
+            this.txtIslem1.Name = "txtIslem1";
+            this.txtIslem1.Size = new System.Drawing.Size(71, 22);
+            this.txtIslem1.TabIndex = 15;
+            this.txtIslem1.Text = "İşlem 1:";
+            // 
+            // txtIslem2
+            // 
+            this.txtIslem2.AutoSize = true;
+            this.txtIslem2.Location = new System.Drawing.Point(514, 365);
+            this.txtIslem2.Name = "txtIslem2";
+            this.txtIslem2.Size = new System.Drawing.Size(71, 22);
+            this.txtIslem2.TabIndex = 17;
+            this.txtIslem2.Text = "İşlem 2:";
+            // 
+            // prgBarIslem2
+            // 
+            this.prgBarIslem2.Location = new System.Drawing.Point(646, 365);
+            this.prgBarIslem2.Name = "prgBarIslem2";
+            this.prgBarIslem2.Size = new System.Drawing.Size(349, 30);
+            this.prgBarIslem2.TabIndex = 16;
+            // 
+            // txtIslem3
+            // 
+            this.txtIslem3.AutoSize = true;
+            this.txtIslem3.Location = new System.Drawing.Point(514, 415);
+            this.txtIslem3.Name = "txtIslem3";
+            this.txtIslem3.Size = new System.Drawing.Size(71, 22);
+            this.txtIslem3.TabIndex = 19;
+            this.txtIslem3.Text = "İşlem 3:";
+            // 
+            // prgBarIslem3
+            // 
+            this.prgBarIslem3.Location = new System.Drawing.Point(646, 415);
+            this.prgBarIslem3.Name = "prgBarIslem3";
+            this.prgBarIslem3.Size = new System.Drawing.Size(349, 30);
+            this.prgBarIslem3.TabIndex = 18;
+            // 
+            // btnBaslatPrgBarIslem
+            // 
+            this.btnBaslatPrgBarIslem.Location = new System.Drawing.Point(591, 460);
+            this.btnBaslatPrgBarIslem.Name = "btnBaslatPrgBarIslem";
+            this.btnBaslatPrgBarIslem.Size = new System.Drawing.Size(109, 43);
+            this.btnBaslatPrgBarIslem.TabIndex = 20;
+            this.btnBaslatPrgBarIslem.Text = "Başlat";
+            this.btnBaslatPrgBarIslem.UseVisualStyleBackColor = true;
+            this.btnBaslatPrgBarIslem.Click += new System.EventHandler(this.btnBaslatPrgBarIslem_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // txtIslem1Deger
+            // 
+            this.txtIslem1Deger.AutoSize = true;
+            this.txtIslem1Deger.Location = new System.Drawing.Point(587, 317);
+            this.txtIslem1Deger.Name = "txtIslem1Deger";
+            this.txtIslem1Deger.Size = new System.Drawing.Size(20, 22);
+            this.txtIslem1Deger.TabIndex = 21;
+            this.txtIslem1Deger.Text = "0";
+            // 
+            // txtIslem2Deger
+            // 
+            this.txtIslem2Deger.AutoSize = true;
+            this.txtIslem2Deger.Location = new System.Drawing.Point(587, 365);
+            this.txtIslem2Deger.Name = "txtIslem2Deger";
+            this.txtIslem2Deger.Size = new System.Drawing.Size(20, 22);
+            this.txtIslem2Deger.TabIndex = 22;
+            this.txtIslem2Deger.Text = "0";
+            // 
+            // txtIslem3Deger
+            // 
+            this.txtIslem3Deger.AutoSize = true;
+            this.txtIslem3Deger.Location = new System.Drawing.Point(587, 413);
+            this.txtIslem3Deger.Name = "txtIslem3Deger";
+            this.txtIslem3Deger.Size = new System.Drawing.Size(20, 22);
+            this.txtIslem3Deger.TabIndex = 23;
+            this.txtIslem3Deger.Text = "0";
             // 
             // _06_TemelAraciKullanimleri2
             // 
@@ -467,6 +577,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 542);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.txtIslem3Deger);
+            this.Controls.Add(this.txtIslem2Deger);
+            this.Controls.Add(this.txtIslem1Deger);
+            this.Controls.Add(this.btnBaslatPrgBarIslem);
+            this.Controls.Add(this.txtIslem3);
+            this.Controls.Add(this.prgBarIslem3);
+            this.Controls.Add(this.txtIslem2);
+            this.Controls.Add(this.prgBarIslem2);
+            this.Controls.Add(this.txtIslem1);
+            this.Controls.Add(this.prgBarIslem1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnAzalt);
             this.Controls.Add(this.btnArttir);
@@ -545,5 +665,18 @@
         private System.Windows.Forms.Button btnArttir;
         private System.Windows.Forms.Button btnAzalt;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar prgBarIslem1;
+        private System.Windows.Forms.Label txtIslem1;
+        private System.Windows.Forms.Label txtIslem2;
+        private System.Windows.Forms.ProgressBar prgBarIslem2;
+        private System.Windows.Forms.Label txtIslem3;
+        private System.Windows.Forms.ProgressBar prgBarIslem3;
+        private System.Windows.Forms.Button btnBaslatPrgBarIslem;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Label txtIslem1Deger;
+        private System.Windows.Forms.Label txtIslem2Deger;
+        private System.Windows.Forms.Label txtIslem3Deger;
     }
 }
